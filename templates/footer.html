@@ -1,0 +1,47 @@
+
+<!--footer-->
+<div class="footer">
+
+	<div class="footer-bottom">
+		<div class="container">
+				<div class="col-md-3 footer-bottom-cate">
+					<h6>Categories</h6>
+					{% for row in product_type %}
+					<ul>
+						<li><a href="/page1?product_type_id={{row[0]}}">{{row[1]}}</a></li>
+					</ul>
+					{% endfor %}
+				</div>
+				<div class="col-md-3 footer-bottom-cate">
+					<h6>Featured Products</h6>
+					<ul>
+						<li><a href="/view_product?id=12"> Flying Broomstick</a></li>
+						<li><a href="/view_product?id=20"> Fairy Wings</a></li>
+						<li><a href="/view_product?id=3"> Invisibility Cloak</a></li>
+						<li><a href="/view_product?id=25"> Bloody Mary Mirror</a></li>
+
+					</ul>
+				</div>
+				<div class="col-md-3 footer-bottom-cate">
+					<h6>Business Analytics</h6>
+					<ul>
+						<li><a href="/analytics/">View Data</a></li>
+
+
+					</ul>
+				</div>
+				<div class="col-md-3 footer-bottom-cate cate-bottom">
+					<h6>Our Address</h6>
+					<ul>
+						<li><a href="#"> Pittsburgh </a></li>
+
+						<li class="phone"></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+				<p class="footer-class"></p>
+			</div>
+	</div>
+</div>
+
+<!--//footer-->
